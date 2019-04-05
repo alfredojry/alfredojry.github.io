@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lemon');
 
+header, main, nav, footer, figure, figcaption, aside, section, article {
+  display: block;
+}
+
 body {
   font-family: 'Lemon', cursive;
   margin: 0px;
@@ -12,8 +16,12 @@ main {
 
 #welcome-section {
   height: 100vh;
-  /*width: 100%;*/
   background-color: #EBDEF0;
+  background-image: url('../images/workspace80.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,14 +30,18 @@ main {
 }
 
 h1 {
- font-size: 40px; 
- text-align: center;
+  text-align: center;
+  color: #003040;
+}
+
+h1 .lastname {
+  color:#003040;
 }
 
 .intro-1 {
   font-size: 24px;
   text-align: center;
-  color: #2471A3;
+  color: #003044;
 }
 
 .intro-2 {
@@ -126,17 +138,22 @@ h1 {
   transform: scale(1.1);
 }
   
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 28px;
-    }
-    p {
-      font-size: 22px;
-    }
-    a {
-      font-size: 22px;
-    }
+@media only screen and (max-width: 37.5em) {
+
+  h1 {
+    font-size: 1.5em;
   }
+  
+  nav {
+  padding: 0;
+  }
+
+  nav a {
+    display: block
+    font-size: 22px;
+  }
+
+}
 
 #navbar {
   display: flex;
@@ -145,11 +162,15 @@ h1 {
   align-items: center;
   width: 100%;
   height: 50px;
-  background-color: #EBDEF0;
+  background-color: #003050;
   position: fixed;
   top: 0px;
   left: 0px;
   align-items: center;
+}
+
+nav a {
+  color:#CCCCCC;
 }
 
 .link-nav {
@@ -162,3 +183,4 @@ h1 {
 
 .link-nav:hover {
   transform: scale(1.1);
+
