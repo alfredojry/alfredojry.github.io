@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: alfredojry.github.io
+Token: a54374039cab0500dca8fd7c1498a1098cd24beb5969dbed196aff40626d93c4
